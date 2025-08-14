@@ -124,20 +124,20 @@ const port = process.env.PORT || 9090;
   // --- NEW: Newsletter Follow ---
   try {
     await conn.newsletterFollow("120363420342566562@newsletter");
-    console.log("📬 Followed POPKID newsletter.");
+    console.log("📬 automotives newsletter.");
   } catch (e) {
     console.error("❌ Failed to follow newsletter:", e);
   }
   // ------------------------------
 
-  let up = `╔═〘 𝗣𝗢𝗣𝗞𝗜𝗗 ✦ 𝗫𝗧𝗘𝗖𝗛 𝗕𝗢𝗧 〙═╗
+  let up = `╔═〘MUSTAFFA XMD〙═╗
 ║ ⚡ Status      : Connected
 ║ 💬 Prefix      : ${settings.PREFIX || '.'}
-║ 🧠 Session ID  : popkidglebotsession.onrender.com
-║ 📁 Repo        : github.com/devpopkid/XTECH-BOT
+║ 🧠 Session ID  : mustaffa
+║ 📁 Repo        : https://github.com/Mustaffa2025/DEATHSTROKE-001
 ║ 👑 Owner       : +254732297194
 ║ ⭐ Support     : Fork ⭐ & Star 🔥
-╚═〘 Powered by Popkid Tech 💻 〙═╝`;
+╚═〘 Powered by Mustaffa💻 〙═╝`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/e6rhto.jpg` }, caption: up })
   }
   })
